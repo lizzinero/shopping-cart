@@ -1,0 +1,94 @@
+.container {
+    background: url(/assets/images/sky.png) no-repeat top;
+    
+}
+
+.shopping-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    gap: 5px;
+}
+
+.shopping-cart__title {
+    align-self: flex-start;
+    margin-left: 2vw;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+}
+.product__card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 45vw;
+    background-color: white;
+    border: 2px solid rgb(77, 51, 26);
+}
+.product__img {
+    height: 150px;
+    margin: 15px;
+}
+
+.product__card_text {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+.product__title {
+    font-family: "Andika", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.product__quantity {
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.product__price {
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 9vw;
+}
+
+.total-price__box {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-template-rows: minmax(min-content, max-content);
+    justify-content: space-between;
+    align-items: center;
+    width: 45vw;
+    gap: 10px;
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+.button {
+    grid-column: 1 / 2;
+    padding: 20px;
+    background-color: rgb(245, 235, 222);
+    cursor: pointer;
+    border: 1px solid rgb(85, 59, 4);
+}
+.total__price_text {
+    grid-column: 2 / 3;
+    font-weight: 700;
+}
+.total-price {
+    grid-column: 3 / 4;
+}
+.total__price_rub {
+    grid-column: 4 / 5;
+}
